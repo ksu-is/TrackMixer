@@ -1,0 +1,11 @@
+# Use this to test or install Pydub
+# pip install pydub
+# Remove the '#' infront of pip to install Pydub, you only need to do this once
+# conda install -c anaconda pyaudio
+# Remove the '#' infront of conda to install Pyaudio, same as Pydub but this installation code works best in Anaconda
+import pydub
+from pydub import AudioSegment
+from pydub.playback import play
+#Enter the 
+wav_file = AudioSegment.from_file(file = )
+play(wav_file)
