@@ -1,5 +1,8 @@
 Figured out what a project road map is. Thank you to everyone on teams.
 I guess if I had to make a list of steps for this it would go like:
+from tikinter import *
+root = Tk()
+c = Checkbutton(root, text = "1. Get Pydub working") c.pack()
 1. Get Pydub working
 2. Figure out which songs to use for each section
 3. Download each track, either a karaoke version or regularlly
