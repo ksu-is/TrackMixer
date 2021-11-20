@@ -1,4 +1,5 @@
 # Use this to test or install Pydub
+# Pydub only plays .wav files without additional extentions
 # pip install pydub
 # Remove the '#' infront of pip to install Pydub, you only need to do this once
 # conda install -c anaconda pyaudio
@@ -6,6 +7,7 @@
 import pydub
 from pydub import AudioSegment
 from pydub.playback import play
-#Enter the 
+#Enter the path of the file you wish to play
 wav_file = AudioSegment.from_file(file = )
 play(wav_file)
+# The easiest way to get the path is to Copy Path directly from your files
