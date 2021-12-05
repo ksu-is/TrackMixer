@@ -1,3 +1,8 @@
+"'Explanation for the install section! If you used the test feature then you do not have to reinstall Pydub or Pyaudio. If you have not seen the test feature
+then your machine will need time to install everything into Anaconda. Random is used to shuffle between tracklists and AudioSegment is used to actually get audio from the tracks.
+Explanation for the song1-6! This is where you put either all of your vocal or backing tracks, try to keep them seperated from each other.
+Same goes for song7-12, put the opposite accompament for what you did in song1-6. If you wish to add more tracks follow the given song and add the title to list 1 or 2."' 
+
 pip install pydub
 conda install -c anaconda pyaudio
 import random
@@ -27,3 +32,8 @@ choice2 = random.choice(list2)
 
 combinedsound = choice1.overlay(choice2)
 play(combinedsound)
+
+"'Bonus assistance! How to replace this with a path to a .wav file, assuming the .wav file is on your machine somewhere. First, find the file on your computer.
+If you can't find it then search the entire computer for any .wav . Once located, right click the file and click Copy as path. Then replace the hashtagged info with
+your new path to a .wav file. You will need to double backslash everything, if your file is C:\users\you\music\vocal\song.wav then it will need to become
+C:\\users\\you\\music\\vocal\\song.wav. This can rarely need to be done with forward slashes, if problems keep occuring, this could be why."'
