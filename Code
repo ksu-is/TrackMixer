@@ -1,0 +1,29 @@
+pip install pydub
+conda install -c anaconda pyaudio
+import random
+from pydub import AudioSegment
+from pydub.playback import play
+
+    song1 = AudioSegment.from_wav(#Replace this with path to a .wav file on your machine)
+    song2 = AudioSegment.from_wav(#Replace this with path to a .wav file on your machine)
+    song3 = AudioSegment.from_wav(#Replace this with path to a .wav file on your machine)
+    song4 = AudioSegment.from_wav(#Replace this with path to a .wav file on your machine)
+    song5 = AudioSegment.from_wav(#Replace this with path to a .wav file on your machine)
+    song6 = AudioSegment.from_wav(#Replace this with path to a .wav file on your machine)
+
+list1 = [song1, song2, song3, song4, song5, song6]
+
+    song7 = AudioSegment.from_wav(#Replace this with path to a .wav file on your machine)
+    song8 = AudioSegment.from_wav(#Replace this with path to a .wav file on your machine)
+    song9 = AudioSegment.from_wav(#Replace this with path to a .wav file on your machine)
+    song10 = AudioSegment.from_wav(#Replace this with path to a .wav file on your machine)
+    song11 = AudioSegment.from_wav(#Replace this with path to a .wav file on your machine)
+    song12 = AudioSegment.from_wav(#Replace this with path to a .wav file on your machine)
+
+list2 = [song7, song8, song9, song10, song11, song12]
+
+choice1 = random.choice(list1)
+choice2 = random.choice(list2)
+
+combinedsound = choice1.overlay(choice2)
+play(combinedsound)
